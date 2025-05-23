@@ -1,3 +1,4 @@
+/*
 벡터
  - 메모리 공간이 부족하면 자동으로 더 큰 공간으로 재할당
  - 순차적 삽입/삭제에 적합(끝에서)
@@ -15,7 +16,9 @@ v.capacity() = 할당된 공간의 크기
 
 
 벡터를 사용하는 방법
-1. 생성
+
+*/
+//1. 생성
   #include <vector>                    // vector가 들어있는 헤더파일
   vector<int> v;                       // int타입 벡터 생성
   vector<int> v = { 1, 2, 3};          // int형 백터 생성 후 1, 2, 3 으로 초기화
@@ -26,7 +29,7 @@ v.capacity() = 할당된 공간의 크기
   vector<int> v(5, 3);                 // 5개의 원소를 3으로 초기화
   vector<int> v2(v);                   // 벡터 v를 복사하여 벡터v2 생성
 
-2. 값 추가
+//2. 값 추가
  #include <iostream>
  #include <vector>
  using namespace std;
@@ -45,13 +48,14 @@ v.capacity() = 할당된 공간의 크기
  }
 
 
-
+/*
 Iterator
  - 컨테이너의 원소들을 가리키는 객체
  - 포인터처럼 *, ++, -- 등의 연산 가능
  - STL 컨테이너는 모두 iterator를 제공하며, vector는 랜덤 액세스 iterator를 지원
+*/
 
-1. 출력하기
+//1. 출력
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -70,7 +74,7 @@ int main() {
 }
  //결과 10 20 30 40 50
 
-2. 삽입/삭제
+//2. 삽입/삭제
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -93,7 +97,7 @@ int main() {
 }
 //결과 1 99 2 4 5
 
-3. 역순 출력
+//3. 역순 출력
 #include <iostream>
 #include <vector>
 using namespace std;
