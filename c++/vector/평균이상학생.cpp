@@ -21,6 +21,9 @@ int main() {
         scores.push_back(pair.second);
     }
   /*
+ const auto&
+ 이 값은 바꾸지 않겠고, 복사하지 말고 참조만 한다는 의미 (효율적이고 안전)
+  
   변수 paiir안에는 student_scores와 같이 학생이름:점수 의 자료가 저장됨
   pair.first  → "Alice", "Bob", ...
   pair.second → 85, 72, ...
