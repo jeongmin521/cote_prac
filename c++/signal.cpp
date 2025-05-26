@@ -31,10 +31,11 @@ signal
 그 이벤트를 처리할 함수를 등록하는 기능
 
 SIGINT | Ctrl+C로 인터럽트    
-SIGTERM | 종료 요청           
+SIGTERM | 종료 요청(kill 명)        
 SIGSEGV | 세그멘테이션 오류       
 SIGABRT | 비정상 종료          
-SIGKILL | 강제 종료 (잡을 수 없음) 
+SIGKILL | 강제 종료 (잡을 수 없음, kill -9) 
+SIGTSTP	| Stop 시그널 (터미널 중지)(ctrl + z)
 
 
 signal(SIGINT, handleSignal);
